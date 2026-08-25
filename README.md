@@ -4,13 +4,13 @@ Minhas configurações e anotações para o [VSCodium](https://vscodium.com/).
 
 ## Setup inicial
 
-Antes de iniciar o VSCodium pela priemira vez, criar uma pasta chamada "**data**" dentro da raiz onde o executável do aplicativo está. Isso vai ligar o modo portátil e todas as configurações vão ficar nesta pasta.
+Antes de iniciar o VSCodium pela primeira vez, criar uma pasta chamada "**data**" dentro da raiz onde o executável do aplicativo está. Isso vai ligar o modo portátil e todas as configurações vão ficar nesta pasta.
 
 Dentro da pasta "**data**", clone o repositório das configurações com `git clone https://github.com/llucasdelima/vscodium-configs.git user-data\User`. A estrutura final deve ser "**data>user-data>User**".
 
-### Habilitando as extenções da Microsoft
+### Habilitando as extensões da Microsoft
 
-O VSCodium não tem acesso ao repositório de extenções da Microsft por padrão, ele busca as extenções em um repositório aberto da comunidade e por isso não tem todas os addons. Para mudar isso modifique esses trechos de código no arquivo "**vscodium\resources\app\products.json**" do VSCodium:
+O VSCodium não tem acesso ao repositório de extensões da Microsoft por padrão, ele busca as extensões em um repositório aberto da comunidade e por isso não tem todos os addons. Para mudar isso, modifique esses trechos de código no arquivo "**vscodium\resources\app\product.json**" do VSCodium:
 
 ```json
 "extensionsGallery": {
@@ -21,7 +21,7 @@ O VSCodium não tem acesso ao repositório de extenções da Microsft por padrã
 }
 ```
 
-Por esse código do "**products.json**" do VSCode:
+Por esse código do "**product.json**" do VSCode:
 
 ```json
 "extensionsGallery": {
@@ -35,15 +35,15 @@ Por esse código do "**products.json**" do VSCode:
 }
 ```
 
-### Baixando as extenções
+### Baixando as extensões
 
-Para baixar todas as extenções de uma vez podemos usar o seguinte comando:
+Para baixar todas as extensões de uma vez, podemos usar o seguinte comando:
 
 ```powershell
-"id_extenção", "id_extenção", "id_extenção" | ForEach-Object { codium --install-extension $_ }
+"id_extensão", "id_extensão", "id_extensão" | ForEach-Object { codium --install-extension $_ }
 ```
 
-Onde ""**id_extenção**" é o id da extenção que você quer instalar e codium é o arquivo binário do VSCodium. Geralmente ele fica em "**vscodium\bin\codium.cmd**". No meu caso, depois de entrar na pasta "**vscdoium\bin**" com o terminal, eu uso o comando:
+Onde "**id_extensão**" é o id da extensão que você quer instalar e codium é o arquivo binário do VSCodium. Geralmente ele fica em "**vscodium\bin\codium.cmd**". No meu caso, depois de entrar na pasta "**vscodium\bin**" com o terminal, eu uso o comando:
 
 ```powershell
 "Catppuccin.catppuccin-vsc", "Catppuccin.catppuccin-vsc-icons", "sumneko.lua", "yzhang.markdown-all-in-one", "bierner.markdown-checkbox", "bierner.markdown-footnotes", "TakumiI.markdowntable", "DavidAnson.vscode-markdownlint", "Mesgegra.pico-8-toolkit", "PollywogGames.pico8-ls", "esbenp.prettier-vscode", "alefragnani.project-manager" | ForEach-Object { .\codium.cmd --install-extension $_ }
@@ -55,4 +55,4 @@ Agora o VSCodium está pronto para ser inicializado e já vai estar configurado 
 
 ## Notas
 
-- O atalho ctrl+shift+o listar as variáveis, funções e etc do arquivo. Colocando dois ponto "**:**" depois de chamar o atalho vai filtrar a lista pelos diferentes tipos.
+- O atalho `ctrl+shift+o` lista as variáveis, funções, etc do arquivo. Ao colocar dois pontos "**:**" depois de chamar o atalho, a lista é filtrada pelos diferentes tipos de categorias.
