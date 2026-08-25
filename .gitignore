@@ -1,0 +1,7 @@
+*
+!settings.json
+!keybindings.json
+!snippets/
+!snippets/*
+!.gitignore
+!extensions.txt

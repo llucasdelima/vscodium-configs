@@ -1,0 +1,11 @@
+Catppuccin.catppuccin-vsc
+Catppuccin.catppuccin-vsc-icons
+sumneko.lua
+yzhang.markdown-all-in-one
+bierner.markdown-checkbox
+bierner.markdown-footnotes
+TakumiI.markdowntable
+DavidAnson.vscode-markdownlint
+Mesgegra.pico-8-toolkit
+PollywogGames.pico8-ls
+esbenp.prettier-vscode
