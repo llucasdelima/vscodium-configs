@@ -83,11 +83,9 @@
   "[lua]": {
     "editor.defaultFormatter": "sumneko.lua",
   },
-  "[pico-8]": {
-    "editor.defaultFormatter": "PollywogGames.pico8-ls",
-  },
   "pico8.pico8Path": "/home/lucas/Applications/pico-8/pico8",
   "[pico-8]": {
+    "editor.defaultFormatter": "PollywogGames.pico8-ls",
     "editor.insertSpaces": false,
     "editor.tabSize": 1,
     "editor.detectIndentation": false,
